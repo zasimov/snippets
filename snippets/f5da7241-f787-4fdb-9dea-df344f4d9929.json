@@ -1,0 +1,15 @@
+{
+  "uuid": "f5da7241-f787-4fdb-9dea-df344f4d9929",
+  "name": "javax.servlet",
+  "description": "javax.servlet dependency for pom.xml",
+  "extraSearchTerms": [],
+  "tags": [
+    "dependency"
+  ],
+  "code": "\u003cdependency\u003e\n    \u003cgroupId\u003ejavax.servlet\u003c/groupId\u003e\n    \u003cartifactId\u003ejavax.servlet-api\u003c/artifactId\u003e\n    \u003cversion\u003e3.1.0\u003c/version\u003e\n    \u003cscope\u003eprovided\u003c/scope\u003e\n\u003c/dependency\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}
