@@ -1,0 +1,15 @@
+{
+  "uuid": "75e72b34-ed6e-4b99-a87c-7056551890f7",
+  "name": "jersey 2 servlet",
+  "description": "Add Jersey 2 ServletContainer",
+  "extraSearchTerms": [],
+  "tags": [
+    "web"
+  ],
+  "code": "\t\u003cservlet\u003e\n\t\t\u003cservlet-name\u003e${servletName}\u003c/servlet-name\u003e\n\t\t\u003cservlet-class\u003eorg.glassfish.jersey.servlet.ServletContainer\u003c/servlet-class\u003e\n\t\t\u003cinit-param\u003e\n\t\t\t\u003cparam-name\u003ejersey.config.server.provider.packages\u003c/param-name\u003e\n\t\t\t\u003cparam-value\u003e${packages}\u003c/param-value\u003e\n\t\t\u003c/init-param\u003e\n\t\t\u003cload-on-startup\u003e1\u003c/load-on-startup\u003e\n\t\u003c/servlet\u003e\n\n\t\u003cservlet-mapping\u003e\n\t\t\u003cservlet-name\u003e${servletName}\u003c/servlet-name\u003e\n\t\t\u003curl-pattern\u003e/rest/*\u003c/url-pattern\u003e\n\t\u003c/servlet-mapping\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "web.xml"
+  ],
+  "dependencies": []
+}
