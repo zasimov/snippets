@@ -1,0 +1,15 @@
+{
+  "uuid": "e2051c31-796f-4993-af64-3c30194d81b2",
+  "name": "jersey minimal",
+  "description": "Mininal Set for Jersey dependencies (1.17.1)",
+  "extraSearchTerms": [],
+  "tags": [
+    "dependency"
+  ],
+  "code": "\u003cdependency\u003e\n    \u003cgroupId\u003ecom.sun.jersey\u003c/groupId\u003e\n    \u003cartifactId\u003ejersey-server\u003c/artifactId\u003e\n    \u003cversion\u003e1.17.1\u003c/version\u003e\n\u003c/dependency\u003e\n\u003cdependency\u003e\n    \u003cgroupId\u003ecom.sun.jersey\u003c/groupId\u003e\n    \u003cartifactId\u003ejersey-core\u003c/artifactId\u003e\n    \u003cversion\u003e1.17.1\u003c/version\u003e\n\u003c/dependency\u003e\n\u003cdependency\u003e\n    \u003cgroupId\u003ecom.sun.jersey\u003c/groupId\u003e\n    \u003cartifactId\u003ejersey-servlet\u003c/artifactId\u003e\n    \u003cversion\u003e1.17.1\u003c/version\u003e\n\u003c/dependency\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}
