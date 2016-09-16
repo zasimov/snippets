@@ -1,0 +1,17 @@
+{
+  "uuid": "32a80489-7aee-4a52-8a2c-6ac281881626",
+  "name": "mysql connector",
+  "description": "MySQL connector",
+  "extraSearchTerms": [],
+  "tags": [
+    "dependency",
+    "persistence",
+    "mysql"
+  ],
+  "code": "    \u003c!-- mysql connector --\u003e\n    \u003cdependency\u003e\n        \u003cgroupId\u003emysql\u003c/groupId\u003e\n        \u003cartifactId\u003emysql-connector-java\u003c/artifactId\u003e\n        \u003cversion\u003e5.1.34\u003c/version\u003e\n    \u003c/dependency\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}
