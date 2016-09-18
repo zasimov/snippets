@@ -1,7 +1,7 @@
 {
   "uuid": "f5da7241-f787-4fdb-9dea-df344f4d9929",
   "name": "javax.servlet",
-  "description": "javax.servlet dependency for pom.xml",
+  "description": "javax.servlet dependency for pom.xml (Servlet API)",
   "extraSearchTerms": [],
   "tags": [
     "dependency"
