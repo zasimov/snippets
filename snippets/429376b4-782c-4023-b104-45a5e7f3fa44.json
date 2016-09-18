@@ -1,0 +1,15 @@
+{
+  "uuid": "429376b4-782c-4023-b104-45a5e7f3fa44",
+  "name": "ugly hibernate.cfg.xml for mysql",
+  "description": "Hibernate configuration for development purposes only. Do not use this configuration for production applications.",
+  "extraSearchTerms": [],
+  "tags": [
+    "hibernate"
+  ],
+  "code": "\u003c?xml version\u003d\"1.0\" encoding\u003d\"UTF-8\"?\u003e\n\u003c!DOCTYPE hibernate-configuration PUBLIC \"-//Hibernate/Hibernate Configuration DTD 3.0//EN\"\n                                         \"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd\"\u003e\n\u003chibernate-configuration\u003e\n \u003csession-factory name\u003d\"hibernateSessionFactory\"\u003e\n  \u003cproperty name\u003d\"hibernate.connection.driver_class\"\u003ecom.mysql.jdbc.Driver\u003c/property\u003e\n  \u003cproperty name\u003d\"hibernate.connection.username\"\u003eroot\u003c/property\u003e\n  \u003cproperty name\u003d\"hibernate.connection.password\"\u003eroot\u003c/property\u003e\n  \u003cproperty name\u003d\"hibernate.connection.url\"\u003ejdbc:mysql://${hostname}:3306/${database}\u003c/property\u003e\n  \u003cproperty name\u003d\"hibernate.dialect\"\u003eorg.hibernate.dialect.MySQLDialect\u003c/property\u003e\n  \u003cproperty name\u003d\"hibernate.show_sql\"\u003etrue\u003c/property\u003e\n  \u003cproperty name\u003d\"hibernate.format_sql\"\u003etrue\u003c/property\u003e\n\u003c!--   \u003cproperty name\u003d\"hibernate.hbm2ddl.auto\"\u003ecreate\u003c/property\u003e --\u003e\n  \u003cmapping class\u003d\"${entityclass}\"/\u003e\n \u003c/session-factory\u003e\n\u003c/hibernate-configuration\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "hibernate.cfg.xml"
+  ],
+  "dependencies": []
+}
