@@ -1,0 +1,15 @@
+{
+  "uuid": "47c3795c-b7ab-4c67-984e-c59942bb332e",
+  "name": "jetty development server",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "devtools"
+  ],
+  "code": "        \u003cplugin\u003e\n            \u003cgroupId\u003eorg.eclipse.jetty\u003c/groupId\u003e\n            \u003cartifactId\u003ejetty-maven-plugin\u003c/artifactId\u003e\n            \u003cversion\u003e9.3.7.v20160115\u003c/version\u003e\n            \u003cconfiguration\u003e\n                \u003creload\u003eautomatic\u003c/reload\u003e\n                \u003cscanIntervalSeconds\u003e1\u003c/scanIntervalSeconds\u003e\n                \u003cwebApp\u003e\n                    \u003c!-- no need to scan anything as we\u0027re using servlet 2.5 and moreover, we\u0027re not using ServletContainerInitializer(s) --\u003e\n                    \u003c!-- for more relevant information regarding scanning of classes refer to https://java.net/jira/browse/SERVLET_SPEC-36 --\u003e\n                    \u003cwebInfIncludeJarPattern\u003e^$$\u003c/webInfIncludeJarPattern\u003e\n                    \u003ccontainerIncludeJarPattern\u003e^$$\u003c/containerIncludeJarPattern\u003e\n                    \u003c!--\u003cwebInfIncludeJarPattern\u003e.*/spring-[^/]*\\.jar$$|.*/.*jsp-api-[^/]\\.jar$$|./.*jsp-[^/]\\.jar$$|./.*taglibs[^/]*\\.jar$$\u003c/webInfIncludeJarPattern\u003e--\u003e\n                \u003c/webApp\u003e\n                \u003c/configuration\u003e\n        \u003c/plugin\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}
