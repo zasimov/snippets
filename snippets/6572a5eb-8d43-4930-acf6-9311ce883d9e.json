@@ -1,0 +1,13 @@
+{
+  "uuid": "6572a5eb-8d43-4930-acf6-9311ce883d9e",
+  "name": "hibernate c3p0",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "  \u003c!-- c3p0 connection provider --\u003e\n  \u003cproperty name\u003d\"connection.provider_class\"\u003eorg.hibernate.connection.C3P0ConnectionProvider\u003c/property\u003e\n  \u003cproperty name\u003d\"c3p0.acquire_increment\"\u003e1\u003c/property\u003e \n  \u003cproperty name\u003d\"c3p0.idle_test_period\"\u003e100\u003c/property\u003e \u003c!-- seconds --\u003e \n  \u003cproperty name\u003d\"c3p0.max_size\"\u003e5\u003c/property\u003e \n  \u003cproperty name\u003d\"c3p0.max_statements\"\u003e0\u003c/property\u003e \n  \u003cproperty name\u003d\"c3p0.min_size\"\u003e2\u003c/property\u003e \n  \u003cproperty name\u003d\"c3p0.timeout\"\u003e5\u003c/property\u003e \u003c!-- seconds --\u003e ",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "hibernate.cfg.xml"
+  ],
+  "dependencies": []
+}
