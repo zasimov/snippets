@@ -1,0 +1,13 @@
+{
+  "uuid": "983218d9-2d50-4c8b-9d81-b2941fe3951f",
+  "name": "dummy scm configuration",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "  \u003cscm\u003e\n      \u003cconnection\u003escm:svn:http://127.0.0.1/dummy\u003c/connection\u003e\n      \u003cdeveloperConnection\u003escm:svn:https://127.0.0.1/dummy\u003c/developerConnection\u003e\n      \u003ctag\u003eHEAD\u003c/tag\u003e\n      \u003curl\u003ehttp://127.0.0.1/dummy\u003c/url\u003e\n  \u003c/scm\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}

@@ -1,0 +1,13 @@
+{
+  "uuid": "4876f10e-dee2-49b3-9b19-7914a2496f6a",
+  "name": "sequential build number",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "        \u003c!-- Build number plugin --\u003e\n        \u003cplugin\u003e\n            \u003cgroupId\u003eorg.codehaus.mojo\u003c/groupId\u003e\n            \u003cartifactId\u003ebuildnumber-maven-plugin\u003c/artifactId\u003e\n            \u003cversion\u003e1.4\u003c/version\u003e\n            \u003cexecutions\u003e\n                \u003cexecution\u003e\n                    \u003cid\u003ebuildNumber\u003c/id\u003e\n                    \u003cphase\u003evalidate\u003c/phase\u003e\n                    \u003cgoals\u003e\n                        \u003cgoal\u003ecreate\u003c/goal\u003e\n                    \u003c/goals\u003e\n                \u003c/execution\u003e\n            \u003c/executions\u003e\n            \u003cconfiguration\u003e\n                \u003cdoCheck\u003efalse\u003c/doCheck\u003e\n                \u003cdoUpdate\u003efalse\u003c/doUpdate\u003e\n                \u003crevisionOnScmFailure\u003eunknownbuild\u003c/revisionOnScmFailure\u003e \n                \u003cformat\u003e{0,number}\u003c/format\u003e\n                \u003citems\u003e\n                    \u003citem\u003ebuildNumber\u003c/item\u003e\n                \u003c/items\u003e               \n            \u003c/configuration\u003e\n        \u003c/plugin\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}
