@@ -1,0 +1,13 @@
+{
+  "uuid": "8252d0b9-ce67-4412-a473-088ab1452d25",
+  "name": "servlet 3",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "\t\u003cservlet\u003e\n\t\t\u003cservlet-name\u003e${applicationClass}\u003c/servlet-name\u003e\n\t\u003c/servlet\u003e\n\t\n\t\u003cservlet-mapping\u003e\n\t\t\u003cservlet-name\u003e${applicationClass}\u003c/servlet-name\u003e\n\t\t\u003curl-pattern\u003e/*\u003c/url-pattern\u003e\n\t\u003c/servlet-mapping\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "web.xml"
+  ],
+  "dependencies": []
+}
