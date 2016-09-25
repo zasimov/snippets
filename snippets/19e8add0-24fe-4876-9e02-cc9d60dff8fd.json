@@ -1,0 +1,13 @@
+{
+  "uuid": "19e8add0-24fe-4876-9e02-cc9d60dff8fd",
+  "name": "hibernate sessions factory",
+  "description": "Stadard Hibernate Session Factory",
+  "extraSearchTerms": [],
+  "tags": [
+    "hibernate"
+  ],
+  "code": "package ${packageName};\n\nimport org.hibernate.Session;\nimport org.hibernate.SessionFactory;\nimport org.hibernate.boot.registry.StandardServiceRegistryBuilder;\nimport org.hibernate.cfg.Configuration;\nimport org.hibernate.service.ServiceRegistry;\n \n\npublic class Sessions {\n    \n    private static Sessions instance \u003d new Sessions();\n    \n    private static SessionFactory sessionFactory;\n    private static ServiceRegistry serviceRegistry;\n    \n    public static Sessions getInstance(){\n            return instance;\n    }\n    \n    private Sessions(){\n        Configuration configuration \u003d new Configuration();\n        configuration.configure(\"hibernate.cfg.xml\");\n                \n        sessionFactory \u003d createSessionFactory();\n    }\n\n    public static SessionFactory createSessionFactory() {\n        Configuration configuration \u003d new Configuration();\n        configuration.configure();\n        serviceRegistry \u003d new StandardServiceRegistryBuilder().applySettings(\n                configuration.getProperties()).build();\n        sessionFactory \u003d configuration.buildSessionFactory(serviceRegistry);\n        return sessionFactory;\n    }\n    \n    public static Session getSession(){\n        Session session \u003d  Sessions.sessionFactory.openSession();\n        \n        return session;\n    }\n}\n",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}
