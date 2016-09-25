@@ -4,7 +4,7 @@
   "description": "Open Session and Transaction",
   "extraSearchTerms": [],
   "tags": [],
-  "code": "\t\tSession session \u003d Sessions.getSession();\n\t\t\n\t\ttry {\n\t\t\tTransaction tx \u003d session.beginTransaction();\n\t\t\t\n\t\t\ttry {\n\t\t\t\tif (! tx.wasCommitted())\n\t\t\t\t\ttx.commit();\n\t\t\t} finally {\n\t\t\t\tif (! tx.wasCommitted())\n\t\t\t\t\ttx.rollback();\n\t\t\t}\n\t\t} finally {\n\t\t\tsession.close();\n\t\t}",
+  "code": "\t\tSession session \u003d Sessions.getSession();\n\t\t\n\t\ttry {\n\t\t\tTransaction tx \u003d session.beginTransaction();\n\t\t\t\n\t\t\ttry {\n\t\t\t\t${code}\t\t\t\t\n\n\t\t\t\tif (! tx.wasCommitted())\n\t\t\t\t\ttx.commit();\n\t\t\t} finally {\n\t\t\t\tif (! tx.wasCommitted())\n\t\t\t\t\ttx.rollback();\n\t\t\t}\n\t\t} finally {\n\t\t\tsession.close();\n\t\t}",
   "location": "FILE",
   "filenameRestrictions": [],
   "dependencies": []
