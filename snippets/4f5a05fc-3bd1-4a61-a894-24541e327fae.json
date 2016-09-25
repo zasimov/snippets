@@ -1,0 +1,15 @@
+{
+  "uuid": "4f5a05fc-3bd1-4a61-a894-24541e327fae",
+  "name": "CRUD service",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "rest",
+    "crud",
+    "service"
+  ],
+  "code": "package ${packageName}.rest;\n\nimport java.util.List;\n\nimport javax.validation.Valid;\nimport javax.ws.rs.Consumes;\nimport javax.ws.rs.DELETE;\nimport javax.ws.rs.GET;\nimport javax.ws.rs.POST;\nimport javax.ws.rs.PUT;\nimport javax.ws.rs.Path;\nimport javax.ws.rs.PathParam;\nimport javax.ws.rs.Produces;\nimport javax.ws.rs.WebApplicationException;\nimport javax.ws.rs.core.MediaType;\nimport javax.ws.rs.core.Response.Status;\n\nimport ${packageName}.beans.${entityName}Bean;\nimport ${packageName}.dao.${entityName}DAO;\nimport ${packageName}.dao.exceptions.Conflict;\nimport ${packageName}.dao.exceptions.NotFound;\n\n@Path(\"/${entityUrl}s\")\npublic class ${entityName}Service {\n\t@POST\n\t@Produces(MediaType.APPLICATION_JSON)\n\t@Consumes(MediaType.APPLICATION_JSON)\n\tpublic ${entityName}Bean create${entityName}(@Valid ${entityName}Bean bean) {\n\t\t${entityName}DAO dao \u003d new ${entityName}DAO();\n\t\ttry {\n\t\t\tdao.create${entityName}(bean);\n\t\t} catch (Conflict exc) {\n\t\t\tthrow new WebApplicationException(Status.CONFLICT);\n\t\t}\n\t\treturn bean;\n\t}\n\t\n\t@GET\n\t@Produces(MediaType.APPLICATION_JSON)\n\tpublic List\u003c${entityName}Bean\u003e getAll${entityName}s() {\n\t\t${entityName}DAO dao \u003d new ${entityName}DAO();\n\t\treturn dao.getAll${entityName}s();\n\t}\n\t\n\t\n\t@GET\n\t@Produces(MediaType.APPLICATION_JSON)\n\t@Path(\"/{uuid}\")\n\tpublic ${entityName}Bean get${entityName}(@PathParam(\"uuid\") String uuid) {\n\t\t${entityName}DAO dao \u003d new ${entityName}DAO();\n\t\t\n\t\ttry {\n\t\t\treturn dao.get${entityName}(uuid);\n\t\t} catch (NotFound e) {\n\t\t\tthrow new WebApplicationException(Status.NOT_FOUND);\n\t\t}\n\t}\n\t\n\t@DELETE\n\t@Path(\"/{uuid}\")\n\tpublic void delete${entityName}(@PathParam(\"uuid\") String uuid) {\n\t\t${entityName}DAO dao \u003d new ${entityName}DAO();\n\t\tdao.delete${entityName}(uuid);\n\t}\n\t\n\t@PUT\n\t@Path(\"/{uuid}\")\n\t@Produces(MediaType.APPLICATION_JSON)\n\t@Consumes(MediaType.APPLICATION_JSON)\n\tpublic ${entityName}Bean update${entityName}(@PathParam(\"uuid\") String uuid, \n\t\t\t${entityName}Bean bean) {\n\t\t${entityName}DAO dao \u003d new ${entityName}DAO();\n\t\t\n\t\tbean.setUuid(uuid);\n\t\t\n\t\ttry {\n\t\t\tdao.update${entityName}(bean);\n\t\t} catch (Conflict c) {\n\t\t\tthrow new WebApplicationException(Status.CONFLICT);\n\t\t}\n\t\t\n\t\treturn bean;\n\t}\n}\n",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

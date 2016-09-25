@@ -1,0 +1,13 @@
+{
+  "uuid": "d8174e3f-903e-421f-8361-2202fe589eb4",
+  "name": "DAO class",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "dao"
+  ],
+  "code": "package ${packageName}.dao;\n\nimport java.util.List;\n\nimport ${packageName}.beans.${entityName}Bean;\n\npublic class ${entityName}DAO {\n\tpublic void create${entityName}(${entityName}Bean bean) throws Conflict {\n\t}\n\t\n\t@SuppressWarnings(\"unchecked\")\n\tpublic List\u003c${entityName}Bean\u003e getAll${entityName}s() {\n\t}\n\n\tpublic ${entityName}Bean get${entityName}(String uuid) throws NotFound {\n\t}\n\t\n\tpublic void delete${entityName}(String uuid) {\n\t}\n\t\n\tpublic void update${entityName}(${entityName}Bean bean) throws Conflict {\n\t}\n}\n",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

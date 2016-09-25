@@ -1,0 +1,13 @@
+{
+  "uuid": "77d05b0a-1db6-4854-a899-8e774c5135a1",
+  "name": "entity with uuid",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "entity"
+  ],
+  "code": "import javax.persistence.Column;\nimport javax.persistence.Entity;\nimport javax.persistence.GeneratedValue;\nimport javax.persistence.Id;\n\nimport org.hibernate.annotations.GenericGenerator;\n\n@Entity\npublic class ${entityName} {\n    private String uuid;\n\n    @GeneratedValue(generator \u003d \"uuid2\")\n    @GenericGenerator(name \u003d \"uuid2\", strategy \u003d \"uuid2\")\n    @Id\n    @Column(length\u003d36)\n    public String getUuid() {\n        return uuid;\n    }\n\n    public void setUuid(String uuid) {\n        this.uuid \u003d uuid;\n    }\n}\n",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

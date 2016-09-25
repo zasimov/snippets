@@ -1,0 +1,16 @@
+{
+  "uuid": "c75f66b5-09e0-45a8-8aea-68e787dfb437",
+  "name": "jersey bean validation",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "dependency",
+    "validation"
+  ],
+  "code": "    \u003c!-- https://mvnrepository.com/artifact/org.glassfish.jersey.ext/jersey-bean-validation --\u003e\n    \u003cdependency\u003e\n        \u003cgroupId\u003eorg.glassfish.jersey.ext\u003c/groupId\u003e\n        \u003cartifactId\u003ejersey-bean-validation\u003c/artifactId\u003e\n        \u003cversion\u003e2.16\u003c/version\u003e\n    \u003c/dependency\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}

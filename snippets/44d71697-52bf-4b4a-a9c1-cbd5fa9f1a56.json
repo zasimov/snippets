@@ -1,0 +1,13 @@
+{
+  "uuid": "44d71697-52bf-4b4a-a9c1-cbd5fa9f1a56",
+  "name": "schema exporter",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "hibernate"
+  ],
+  "code": "package ${packageName}.riggings;\n\nimport java.util.Properties;\n\nimport org.hibernate.cfg.Configuration;\nimport org.hibernate.tool.hbm2ddl.SchemaExport;\n\nimport ${packageName}.entities.${entityClass};\n\npublic class SchemaExporter {\n\n\tpublic static void main(String[] args) {\n\t\tConfiguration config \u003d new Configuration();\n\n\t\tProperties properties \u003d new Properties();\n\n\t\tproperties.put(\"hibernate.dialect\", \"org.hibernate.dialect.MySQLDialect\");\n\t\tproperties.put(\"hibernate.connection.url\", \"jdbc:postgresql://localhost:5432/Test\"); \n\t\tproperties.put(\"hibernate.connection.username\", \"username\");\n\t\tproperties.put(\"hibernate.connection.password\", \"password\");\n\t\tproperties.put(\"hibernate.connection.driver_class\", \"org.postgresql.Driver\");\n\t\tproperties.put(\"hibernate.show_sql\", \"true\");\n\t\tconfig.setProperties(properties);\n\n\t\tconfig.addAnnotatedClass(${entityClass}.class);\n\n\t\tSchemaExport schemaExport \u003d new SchemaExport(config);\n\t\tschemaExport.setDelimiter(\";\");\n\n\t\t/**Just dump the schema SQLs to the console , but not execute them ***/\n\t\tschemaExport.create(true, false);\n\t}\n\n}\n",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

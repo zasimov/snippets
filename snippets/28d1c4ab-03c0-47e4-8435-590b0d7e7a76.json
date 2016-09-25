@@ -1,0 +1,11 @@
+{
+  "uuid": "28d1c4ab-03c0-47e4-8435-590b0d7e7a76",
+  "name": "hibernate update entity",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "${entityName} ${entityVariable} \u003d new ${entityName}();\n\t\t\nsession.update(bean.getUuid(), ${entityVariable});\n\t\t\t\t",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

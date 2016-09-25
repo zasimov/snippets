@@ -1,0 +1,11 @@
+{
+  "uuid": "2a7d2355-4ebb-4447-937a-751b123c0b46",
+  "name": "hibernate delete by uuid",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "Object persistence${entityName} \u003d session.load(${entityName}.class, uuid);\nif (persistence${entityName} !\u003d null) {\n    session.delete(persistence${entityName});\n    if (!tx.wasCommitted())\n        tx.commit();\n\t\t\t\t}",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

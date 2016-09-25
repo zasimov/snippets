@@ -1,0 +1,11 @@
+{
+  "uuid": "9ef7246a-3235-4c64-801c-419d57750b67",
+  "name": "web application class",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "package ${packageName}.application;\n\nimport java.util.HashSet;\nimport java.util.Set;\n\nimport javax.ws.rs.ApplicationPath;\nimport javax.ws.rs.core.Application;\n\nimport ${packageName}.rest.${serviceClass};\n\n@ApplicationPath(\"/\")\npublic class ${applicationName} extends Application {\n\tprivate Set\u003cObject\u003e singletons \u003d new HashSet\u003cObject\u003e();\n\t\n    public ${applicationName}() {\n        singletons.add(new ${serviceClass}());\n    }\n    \n    @Override\n    public Set\u003cObject\u003e getSingletons() {\n    \treturn singletons;\n    }\n}\n",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}
