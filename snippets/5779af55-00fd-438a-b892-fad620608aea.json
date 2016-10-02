@@ -1,0 +1,13 @@
+{
+  "uuid": "5779af55-00fd-438a-b892-fad620608aea",
+  "name": "WebApp Dockerfile",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "FROM openjdk:alpine\n\nCOPY jetty-runner-9.3.12.v20160915.jar /\nCOPY target/${warfile} /\n\nEXPOSE 8080\n\nENTRYPOINT [\"java\", \"-Xmx64M\", \\\n            \"-jar\", \"/jetty-runner-9.3.12.v20160915.jar\", \\\n            \"--path\", \"/\", \\\n            \"/${warfile}\"]\n\n",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "dockerfile"
+  ],
+  "dependencies": []
+}
