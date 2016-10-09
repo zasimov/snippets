@@ -1,0 +1,15 @@
+{
+  "uuid": "ca48adda-d024-42ee-b218-f411232e1f2b",
+  "name": "Persistence Unit",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "persistence"
+  ],
+  "code": "\u003cpersistence xmlns\u003d\"http://xmlns.jcp.org/xml/ns/persistence\"\n             xmlns:xsi\u003d\"http://www.w3.org/2001/XMLSchema-instance\"\n             xsi:schemaLocation\u003d\"http://xmlns.jcp.org/xml/ns/persistence\n             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd\"\n             version\u003d\"2.1\"\u003e\n             \n\t\u003cpersistence-unit name\u003d\"${unitName}\" transaction-type\u003d\"RESOURCE_LOCAL\"\u003e\n\t    \u003cprovider\u003eorg.hibernate.jpa.HibernatePersistenceProvider\u003c/provider\u003e\n\t\n\t\t\u003cclass\u003e${entityClass}\u003c/class\u003e\n\t\t\n\t\t\u003cproperties\u003e\n\t\t\n    \t\t\u003cproperty name\u003d\"openjpa.jdbc.SynchronizeMappings\" value\u003d\"buildSchema(ForeignKeys\u003dtrue)\"/\u003e\n\n    \t\t\u003cproperty name\u003d\"hibernate.dialect\" value\u003d\"org.hibernate.dialect.MySQLDialect\"/\u003e\n    \t\t\u003cproperty name\u003d\"hibernate.connection.driver_class\" value\u003d\"com.mysql.jdbc.Driver\"/\u003e\n    \t\t\u003cproperty name\u003d\"hibernate.connection.username\" value\u003d\"root\"/\u003e\n    \t\t\u003cproperty name\u003d\"hibernate.connection.password\" value\u003d\"root\"/\u003e\n    \t\t\u003cproperty name\u003d\"hibernate.connection.url\" value\u003d\"jdbc:mysql://mysql:3306/${databaseName}\"/\u003e\n\t\t\n    \t\t\u003cproperty name\u003d\"connection_pool_size\" value\u003d\"1\"/\u003e\n\n\t\t\u003c!-- \u003cproperty name\u003d\"hbm2ddl.auto\" value\u003d\"create\"/\u003e --\u003e\n\n    \t\t\u003cproperty name\u003d\"show_sql\" value\u003d\"true\"/\u003e\n    \t\t\u003cproperty name\u003d\"format_sql\" value\u003d\"true\"/\u003e\n\t\t\u003c/properties\u003e\n\t\u003c/persistence-unit\u003e\n\u003c/persistence\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "persistence.xml"
+  ],
+  "dependencies": []
+}

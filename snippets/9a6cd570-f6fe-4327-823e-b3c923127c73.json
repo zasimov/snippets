@@ -1,0 +1,11 @@
+{
+  "uuid": "9a6cd570-f6fe-4327-823e-b3c923127c73",
+  "name": "JPA Sessions",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "public class Sessions {\n\n    private static final String PERSISTENT_UNIT_NAME \u003d \"persistenceUnit\";\n\n    /*\n    private static final EntityManagerFactory emf;\n\n    static {\n        try {\n            emf \u003d Persistence.createEntityManagerFactory(PERSISTENT_UNIT_NAME);\n        } catch (Throwable ex) {\n            System.out.println(\"\u003e\u003e\u003e\" + ex.toString());\n            throw new ExceptionInInitializerError(ex);\n        }\n    }\n    */\n\n    public static EntityManager getEm() {\n        EntityManagerFactory emf;\n        emf \u003d Persistence.createEntityManagerFactory(PERSISTENT_UNIT_NAME);\n        return emf.createEntityManager();\n    }\n}",
+  "location": "FILE",
+  "filenameRestrictions": [],
+  "dependencies": []
+}

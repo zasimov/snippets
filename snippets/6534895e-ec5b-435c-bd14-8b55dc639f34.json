@@ -1,0 +1,13 @@
+{
+  "uuid": "6534895e-ec5b-435c-bd14-8b55dc639f34",
+  "name": "Java Microservice Components Versions",
+  "description": "Basic Components Versions (for pom.xml)",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "  \u003cproperties\u003e\n    \u003cproject.build.sourceEncoding\u003eUTF-8\u003c/project.build.sourceEncoding\u003e\n    \u003cwsrs.version\u003e2.0.1\u003c/wsrs.version\u003e\n    \u003cjersey.version\u003e2.23.2\u003c/jersey.version\u003e\n    \u003chibernate.version\u003e5.2.2.Final\u003c/hibernate.version\u003e\n    \u003cmysqlconnector.version\u003e5.1.34\u003c/mysqlconnector.version\u003e\n  \u003c/properties\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}

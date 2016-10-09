@@ -1,0 +1,16 @@
+{
+  "uuid": "1b612348-397b-459f-876c-6812117a46f3",
+  "name": "hibernate JPA",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "hibernate",
+    "JPA"
+  ],
+  "code": "    \u003cdependency\u003e\n        \u003cgroupId\u003eorg.hibernate\u003c/groupId\u003e\n        \u003cartifactId\u003ehibernate-jpamodelgen\u003c/artifactId\u003e\n        \u003cversion\u003e$${hibernate.version}\u003c/version\u003e\n    \u003c/dependency\u003e\n\t\u003c!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager --\u003e\n\t\u003cdependency\u003e\n\t    \u003cgroupId\u003eorg.hibernate\u003c/groupId\u003e\n\t    \u003cartifactId\u003ehibernate-entitymanager\u003c/artifactId\u003e\n\t    \u003cversion\u003e$${hibernate.version}\u003c/version\u003e\n\t\u003c/dependency\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}

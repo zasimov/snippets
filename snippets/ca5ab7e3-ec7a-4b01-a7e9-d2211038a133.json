@@ -1,0 +1,13 @@
+{
+  "uuid": "ca5ab7e3-ec7a-4b01-a7e9-d2211038a133",
+  "name": "JPA metamodels generator",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "        \u003cplugin\u003e\n            \u003cartifactId\u003emaven-compiler-plugin\u003c/artifactId\u003e\n            \u003cconfiguration\u003e\n                \u003csource\u003e1.8\u003c/source\u003e\n                \u003ctarget\u003e1.8\u003c/target\u003e\n                \u003ccompilerArguments\u003e\n                \t\u003cprocessor\u003eorg.hibernate.jpamodelgen.JPAMetaModelEntityProcessor\u003c/processor\u003e\n            \t\u003c/compilerArguments\u003e\n            \u003c/configuration\u003e\n         \u003c/plugin\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}
