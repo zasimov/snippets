@@ -1,0 +1,15 @@
+{
+  "uuid": "9257daa8-38e7-4f00-aa3e-c49bfc0970d8",
+  "name": "nullness annotations",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "null"
+  ],
+  "code": "    \u003c!-- https://mvnrepository.com/artifact/org.eclipse.jdt/org.eclipse.jdt.annotation --\u003e\n    \u003cdependency\u003e\n        \u003cgroupId\u003eorg.eclipse.jdt\u003c/groupId\u003e\n        \u003cartifactId\u003eorg.eclipse.jdt.annotation\u003c/artifactId\u003e\n        \u003cversion\u003e2.0.0\u003c/version\u003e\n        \u003cscope\u003ecompile\u003c/scope\u003e\n    \u003c/dependency\u003e\n    \u003c!-- https://mvnrepository.com/artifact/org.jetbrains/annotations --\u003e\n    \u003cdependency\u003e\n        \u003cgroupId\u003eorg.jetbrains\u003c/groupId\u003e\n        \u003cartifactId\u003eannotations\u003c/artifactId\u003e\n        \u003cversion\u003e15.0\u003c/version\u003e\n        \u003cscope\u003ecompile\u003c/scope\u003e\n    \u003c/dependency\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    "pom.xml"
+  ],
+  "dependencies": []
+}
